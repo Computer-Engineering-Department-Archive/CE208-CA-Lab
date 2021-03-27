@@ -1,0 +1,17 @@
+{E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector_tb.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector_tb.vhd}
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_VHDL_Moore_FSM_Sequence_Detector
+-- Compiling architecture behavior of tb_VHDL_Moore_FSM_Sequence_Detector
+
+} {} {}} {E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector.vhd}
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity VHDL_MOORE_FSM_Sequence_Detector
+-- Compiling architecture Behavioral of VHDL_MOORE_FSM_Sequence_Detector
+
+} {} {}}

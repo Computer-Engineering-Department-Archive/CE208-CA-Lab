@@ -1,0 +1,112 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/modeltech64_2020.4/examples
+T_opt
+!s110 1616835442
+V`_<Wb9O><N@CH5a0eLDEa3
+04 32 10 work vhdl_moore_fsm_sequence_detector behavioral 1
+=1-2cfda1246ecd-605ef371-12a-21b0
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1616836277
+V=kATXieob@_bABDe45^:[2
+04 35 8 work tb_vhdl_moore_fsm_sequence_detector behavior 1
+=1-2cfda1246ecd-605ef6b5-46-35cc
+R1
+R2
+n@_opt1
+R3
+Etb_vhdl_moore_fsm_sequence_detector
+Z4 w1616836252
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 7
+Z7 dE:/AUT/(04) CEIT-CA/lab/Assignments/3/codes
+Z8 8E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector_tb.vhd
+Z9 FE:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector_tb.vhd
+l0
+L6 1
+Vn@Eg98ML]E8f7Y[I?];230
+!s100 09Rk4mc`9im_gGUKXK@?<3
+Z10 OL;C;2020.4;71
+32
+Z11 !s110 1616836257
+!i10b 1
+Z12 !s108 1616836257.000000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector_tb.vhd|
+Z14 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector_tb.vhd|
+!i113 0
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1 CvgOpt 0
+Abehavior
+R5
+R6
+DEx4 work 35 tb_vhdl_moore_fsm_sequence_detector 0 22 n@Eg98ML]E8f7Y[I?];230
+!i122 7
+l32
+L9 75
+V<V7V3OMQzcX;FFSf[GKk91
+!s100 nR_jEOeDDhXY@L@7G25Ke2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Evhdl_moore_fsm_sequence_detector
+Z17 w1616835196
+R5
+R6
+!i122 6
+R7
+Z18 8E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector.vhd
+Z19 FE:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector.vhd
+l0
+L6 1
+V=B@GhN6[z?IR_bJ<KzFiU2
+!s100 A7SIIQPB:ZKLWf;E0cJ=A0
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector.vhd|
+Z21 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/3/codes/detector.vhd|
+!i113 0
+R15
+R16
+Abehavioral
+R5
+R6
+DEx4 work 32 vhdl_moore_fsm_sequence_detector 0 22 =B@GhN6[z?IR_bJ<KzFiU2
+!i122 6
+l19
+L15 95
+VY[@^9<aKY>IQ?^z[omXN73
+!s100 G`2X[=j6SV2R2BMME_c=73
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 0
+R15
+R16
