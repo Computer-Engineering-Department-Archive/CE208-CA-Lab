@@ -71,7 +71,7 @@ begin
 	end loop;
 		
 	-- test read
-	for i in 0 to 2 loop
+	for i in 0 to 4 loop
 	    T_Read_Addr <= T_Read_Addr + '1';
 	    T_Read <= '1';
 	    wait for 10 ns;	
