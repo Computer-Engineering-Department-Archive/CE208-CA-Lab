@@ -72,7 +72,6 @@ begin
         for i in 0 to 4 loop
             r_Addr_sig <= r_Addr_sig + 5;
             re_sig     <= '1';
-            -- we_sig     <= '0';
             wait for 10 ns;
         end loop;
 
