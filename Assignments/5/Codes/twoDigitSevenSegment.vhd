@@ -5,9 +5,11 @@ use IEEE.NUMERIC_STD.all;
 entity two_digit_bcd_7segment is
 
     port (
-        BCDin       : in std_logic_vector (6 downto 0);
-        firstDigit  : out std_logic_vector (6 downto 0);
-        secondDigit : out std_logic_vector (6 downto 0)
+        BCDinFirstDigit  : in std_logic_vector (3 downto 0);
+        BCDinSecondDigit : in std_logic_vector (3 downto 0);
+
+        firstDigit       : out std_logic_vector (6 downto 0);
+        secondDigit      : out std_logic_vector (6 downto 0)
     );
 
 end two_digit_bcd_7segment;
@@ -16,13 +18,13 @@ architecture Behavioral of two_digit_bcd_7segment is
 
 begin
 
-    process (BCDin)
+    process (BCDinFirstDigit, BCDinSecondDigit)
 
     begin
 
-        if to_integer(unsigned(BCDin)) < 100 then
+        if to_integer(unsigned(BCDinFirstDigit)) < 10 and to_integer(unsigned(BCDinSecondDigit)) < 10 then
 
-            case to_integer(unsigned(BCDin)) mod 10 is
+            case to_integer(unsigned(BCDinFirstDigit)) is
 
                 when 0 =>
                     firstDigit <= "0000001"; --0
@@ -49,7 +51,7 @@ begin
 
             end case;
 
-            case to_integer(unsigned(BCDin)) / 10 is
+            case to_integer(unsigned(BCDinSecondDigit)) is
 
                 when 0 =>
                     secondDigit <= "0000001"; --0

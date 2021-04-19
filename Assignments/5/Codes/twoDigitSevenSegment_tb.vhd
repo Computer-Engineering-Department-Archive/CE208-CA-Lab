@@ -9,50 +9,59 @@ architecture behavior of two_digit_tb_bcd_7seg is
 
     component two_digit_bcd_7segment
         port (
-            BCDin       : in std_logic_vector (6 downto 0);
-            firstDigit  : out std_logic_vector (6 downto 0);
-            secondDigit : out std_logic_vector (6 downto 0)
+            BCDinFirstDigit  : in std_logic_vector (3 downto 0);
+            BCDinSecondDigit : in std_logic_vector (3 downto 0);
+
+            firstDigit       : out std_logic_vector (6 downto 0);
+            secondDigit      : out std_logic_vector (6 downto 0)
         );
     end component;
 
     --Inputs
-    signal BCDin       : std_logic_vector(6 downto 0) := (others => '0');
+    signal BCDinFirstDigit  : std_logic_vector(3 downto 0) := (others => '0');
+    signal BCDinSecondDigit : std_logic_vector(3 downto 0) := (others => '0');
 
     --Outputs
-    signal firstDigit  : std_logic_vector(6 downto 0);
-    signal secondDigit : std_logic_vector(6 downto 0);
+    signal firstDigit       : std_logic_vector(6 downto 0);
+    signal secondDigit      : std_logic_vector(6 downto 0);
 begin
 
     -- Instantiate the Unit Under Test (UUT)
     uut : two_digit_bcd_7segment port map(
-        BCDin       => BCDin,
-        firstDigit  => firstDigit,
-        secondDigit => secondDigit
+        BCDinFirstDigit  => BCDinFirstDigit,
+        BCDinSecondDigit => BCDinSecondDigit,
+
+        firstDigit       => firstDigit,
+        secondDigit      => secondDigit
     );
 
     -- Stimulus process
     stim_proc : process
     begin
 
-        BCDin <= "0000000"; -- 0
+        BCDinFirstDigit  <= "0000"; -- 0
+        BCDinSecondDigit <= "0000"; -- 0
         wait for 100 ns;
-        BCDin <= "0000011"; -- 3
+        BCDinFirstDigit  <= "0001"; -- 1
+        BCDinSecondDigit <= "0000"; -- 0
         wait for 100 ns;
-        BCDin <= "0000110"; -- 6
+        BCDinFirstDigit  <= "1001"; -- 9
+        BCDinSecondDigit <= "0000"; -- 0
         wait for 100 ns;
-        BCDin <= "0000111"; -- 7
+        BCDinFirstDigit  <= "1100"; -- invalid
+        BCDinSecondDigit <= "0000"; -- 0
         wait for 100 ns;
-        BCDin <= "0001001"; -- 9
+        BCDinFirstDigit  <= "1000"; -- 8
+        BCDinSecondDigit <= "1000"; -- 8
         wait for 100 ns;
-        BCDin <= "0001010"; -- 10
+        BCDinFirstDigit  <= "0010"; -- 2
+        BCDinSecondDigit <= "0101"; -- 5
         wait for 100 ns;
-        BCDin <= "0100101"; -- 37
+        BCDinFirstDigit  <= "1001"; -- 9
+        BCDinSecondDigit <= "1001"; -- 9
         wait for 100 ns;
-        BCDin <= "0111111"; -- 63
-        wait for 100 ns;
-        BCDin <= "1100011"; -- 99
-        wait for 100 ns;
-        BCDin <= "1111111"; -- 127
+        BCDinFirstDigit  <= "0001"; -- 1
+        BCDinSecondDigit <= "1100"; -- invalid
         wait for 100 ns;
     end process;
 
