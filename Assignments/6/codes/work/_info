@@ -1,0 +1,380 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modeltech64_2020.4/examples
+Ecarry_look_ahead
+Z0 w1619337536
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 91
+Z3 dE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes
+Z4 8E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadAdder.vhd
+Z5 FE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadAdder.vhd
+l0
+L4 1
+VgkULm5<M3_=_n?[Te]oAb3
+!s100 KH=1:?lH43<FLY:I6kKcz1
+Z6 OL;C;2020.4;71
+32
+Z7 !s110 1619339173
+!i10b 1
+Z8 !s108 1619339173.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadAdder.vhd|
+Z10 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadAdder.vhd|
+!i113 0
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+DEx4 work 16 carry_look_ahead 0 22 gkULm5<M3_=_n?[Te]oAb3
+!i122 91
+l26
+L12 27
+VPO8L<A=::k67@eT?Bj^b;0
+!s100 VOZ:==9[_?EO7jR0Q^4Mj3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Ecarry_save_adder
+Z13 w1619338518
+R1
+R2
+!i122 94
+R3
+Z14 8E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarrySaveAdder.vhd
+Z15 FE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarrySaveAdder.vhd
+l0
+L4 1
+VIF:Z9bFFo<8N^4Wo8d8U81
+!s100 ZKJ;S@l_Y1G09gcKIZnfh2
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarrySaveAdder.vhd|
+Z17 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarrySaveAdder.vhd|
+!i113 0
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 16 carry_save_adder 0 22 IF:Z9bFFo<8N^4Wo8d8U81
+!i122 94
+l36
+L13 37
+VmH_<hg=H2?hJ;UmleJ16^3
+!s100 jFG25VLfNUd1c=FFbP6Q]2
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 0
+R11
+R12
+Efa
+Z18 w1619339170
+R1
+R2
+!i122 96
+R3
+Z19 8E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/FA.vhd
+Z20 FE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/FA.vhd
+l0
+L4 1
+VQV@MQTYj2Pb55Re>i=dm_3
+!s100 8hZP8S@Z3Em^IoJ8Gg=gl3
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/FA.vhd|
+Z22 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/FA.vhd|
+!i113 0
+R11
+R12
+Astructure
+R1
+R2
+DEx4 work 2 fa 0 22 QV@MQTYj2Pb55Re>i=dm_3
+!i122 96
+l21
+L11 17
+Vh2^XC]5E=QcoRAZGoQWbR3
+!s100 AHi2;[Ud5MBmGh`mW=nPF0
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 0
+R11
+R12
+Eha
+Z23 w1619339169
+R1
+R2
+!i122 97
+R3
+Z24 8E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/HA.vhd
+Z25 FE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/HA.vhd
+l0
+L4 1
+VR2oIa`5lf_SJVU2M=jA;>3
+!s100 JI4>h;0lR>F`d:0WU_mcY1
+R6
+32
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/HA.vhd|
+Z27 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/HA.vhd|
+!i113 0
+R11
+R12
+Astructure
+R1
+R2
+DEx4 work 2 ha 0 22 R2oIa`5lf_SJVU2M=jA;>3
+!i122 97
+l13
+L11 6
+Vga<QLHZmOeKd>4c<[AOJ72
+!s100 OoZ[l<[Y3AEDQM>nYl]Ug3
+R6
+32
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 0
+R11
+R12
+Epartial_full_adder
+Z28 w1619337612
+R1
+R2
+!i122 93
+R3
+Z29 8E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadPartialAdder.vhd
+Z30 FE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadPartialAdder.vhd
+l0
+L4 1
+Vd>]MmOHDB`1lJL?]oUTT?0
+!s100 gghJ2JR3e^1>Rln[fd4b`0
+R6
+32
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadPartialAdder.vhd|
+Z32 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadPartialAdder.vhd|
+!i113 0
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 18 partial_full_adder 0 22 d>]MmOHDB`1lJL?]oUTT?0
+!i122 93
+l16
+L14 9
+VU=79:OHh17a>^hM;o:8g;0
+!s100 hiV9EAY[mSXe3]LcIdi8=3
+R6
+32
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 0
+R11
+R12
+Eripple_adder
+Z33 w1619337255
+R1
+R2
+!i122 98
+R3
+Z34 8E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/RippleCarryAdder.vhd
+Z35 FE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/RippleCarryAdder.vhd
+l0
+L4 1
+VjZS:?n4G_^N][YmC:EM@82
+!s100 KLeO59Tk]M6hzN6<;HOCP1
+R6
+32
+Z36 !s110 1619339174
+!i10b 1
+Z37 !s108 1619339174.000000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/RippleCarryAdder.vhd|
+Z39 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/RippleCarryAdder.vhd|
+!i113 0
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 12 ripple_adder 0 22 jZS:?n4G_^N][YmC:EM@82
+!i122 98
+l36
+L13 32
+Vff[6f5_K>eeY07mP1J]zX1
+!s100 >g:z`mcVWYNEIn971l6``2
+R6
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 0
+R11
+R12
+Etb_carry_look_ahead
+Z40 w1619337664
+R1
+R2
+!i122 92
+R3
+Z41 8E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadAdderTB.vhd
+Z42 FE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadAdderTB.vhd
+l0
+L4 1
+V_L]KGXKN]jmUDif0U3NG60
+!s100 UD<J_?6RMOkOcEWP_c=X80
+R6
+32
+R7
+!i10b 1
+R8
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadAdderTB.vhd|
+Z44 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarryLookAheadAdderTB.vhd|
+!i113 0
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 19 tb_carry_look_ahead 0 22 _L]KGXKN]jmUDif0U3NG60
+!i122 92
+l29
+L7 60
+VC6mIaWG[_UR_]0lDhg8zI0
+!s100 ?R5o7W:S8SVN4;XEVAS4d3
+R6
+32
+R7
+!i10b 1
+R8
+R43
+R44
+!i113 0
+R11
+R12
+Etb_carry_save
+Z45 w1619338230
+R1
+R2
+!i122 95
+R3
+Z46 8E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarrySaveAdderTB.vhd
+Z47 FE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarrySaveAdderTB.vhd
+l0
+L4 1
+VdN1BAo?IUiUYM6PUbcKz22
+!s100 1nMoVHjfGI<^gAlj7h74I2
+R6
+32
+R7
+!i10b 1
+R8
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarrySaveAdderTB.vhd|
+Z49 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/CarrySaveAdderTB.vhd|
+!i113 0
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 13 tb_carry_save 0 22 dN1BAo?IUiUYM6PUbcKz22
+!i122 95
+l30
+L7 57
+V:fOm;J:MH6S^3QEWoKMQP3
+!s100 ;F1M3?1NYi@jb3f8D5UR@3
+R6
+32
+R7
+!i10b 1
+R8
+R48
+R49
+!i113 0
+R11
+R12
+Etb_ripple_adder
+Z50 w1619338476
+R1
+R2
+!i122 99
+R3
+Z51 8E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/RippleCarryAdderTB.vhd
+Z52 FE:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/RippleCarryAdderTB.vhd
+l0
+L4 1
+VHKmD2U=2eeE=g2V_i2R=`2
+!s100 W3SRTh1e13RESS4GLQehD0
+R6
+32
+R36
+!i10b 1
+R37
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/RippleCarryAdderTB.vhd|
+Z54 !s107 E:/AUT/(04) CEIT-CA/lab/Assignments/6/codes/RippleCarryAdderTB.vhd|
+!i113 0
+R11
+R12
+Abehavior
+R1
+R2
+Z55 DEx4 work 15 tb_ripple_adder 0 22 HKmD2U=2eeE=g2V_i2R=`2
+!i122 99
+l30
+Z56 L7 63
+Z57 V]Zo`D@a8jbe]khL@JelX>2
+Z58 !s100 N_P2GKR8SF9oQ4VeRcb9D3
+R6
+32
+R36
+!i10b 1
+R37
+R53
+R54
+!i113 0
+R11
+R12
