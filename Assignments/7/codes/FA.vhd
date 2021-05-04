@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 
 entity FA is
 	port (
-		i0, i1, cin : in std_logic;
-		s, cout     : out std_logic
+		A, B, Cin : in std_logic;
+		S, Cout   : out std_logic
 	);
 end entity FA;
 
@@ -20,8 +20,8 @@ architecture structure of FA is
 	signal internal_signal0, internal_signal1, internal_signal2 : std_logic;
 begin
 
-	half_adder_instance0 : HA port map(in1 => i0, in2 => i1, out1 => internal_signal0, out2 => internal_signal1);
-	half_adder_instance1 : HA port map(in1 => internal_signal0, in2 => cin, out1 => s, out2 => internal_signal2);
-	cout <= internal_signal1 or internal_signal2;
+	half_adder_instance0 : HA port map(in1 => A, in2 => B, out1 => internal_signal0, out2 => internal_signal1);
+	half_adder_instance1 : HA port map(in1 => internal_signal0, in2 => Cin, out1 => S, out2 => internal_signal2);
+	Cout <= internal_signal1 or internal_signal2;
 
 end structure;

@@ -10,25 +10,8 @@ end multiplier4bit;
 
 architecture Behavioral of multiplier4bit is
 
-	-- Full Adder 1bit Component Decalaration
-	component FA
-		port (
-			A, B : in std_logic;
-			Cin  : in std_logic;
-			Cout : out std_logic;
-			S    : out std_logic);
-	end component;
-
-	-- Half Adder 1bit Component Decalaration
-	component HA
-		port (
-			A, B : in std_logic;
-			Cout : out std_logic;
-			S    : out std_logic);
-	end component;
-
 	-- Ripple Carry Adder Decalaration
-	component RA
+	component Ripple_Adder
 		port (
 			A    : in std_logic_vector (3 downto 0);
 			B    : in std_logic_vector (3 downto 0);
@@ -70,19 +53,19 @@ begin
 	B1(1)  <= AB0(2);
 	B1(2)  <= AB0(3);
 	B1(3)  <= '0';
-	RA1 : RA port map(AB1, B1, '0', P1, co1);
+	RA1 : Ripple_Adder port map(AB1, B1, '0', P1, co1);
 
 	B2(0) <= P1(1);
 	B2(1) <= P1(2);
 	B2(2) <= P1(3);
 	B2(3) <= co1;
-	RA2 : RA port map(AB2, B2, '0', P2, co2);
+	RA2 : Ripple_Adder port map(AB2, B2, '0', P2, co2);
 
 	B3(0) <= P2(1);
 	B3(1) <= P2(2);
 	B3(2) <= P2(3);
 	B3(3) <= co2;
-	RA3 : RA port map(AB3, B3, '0', P2, co3);
+	RA3 : Ripple_Adder port map(AB3, B3, '0', P3, co3);
 
 	-- Mulitplier output
 	S(0) <= AB0(0);
