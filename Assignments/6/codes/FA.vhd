@@ -1,27 +1,30 @@
-library ieee;
-use ieee.std_logic_1164.all;
-
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
 entity FA is
-Port(
-	i0, i1, cin: in std_logic;
-	s, cout : out std_logic
-);
-end entity FA;
+    port (
+        A    : in std_logic;
+        B    : in std_logic;
+        Cin  : in std_logic;
+        Sum  : out std_logic;
+        Cout : out std_logic);
+end FA;
 
-architecture structure of FA is
+architecture StructOfFA of FA is
+    component HA port (
+        A, B : in std_logic;
+        S, C : out std_logic
+        );
+    end component;
 
-component HA is
-Port(
-	in1, in2: in std_logic;
-	out1, out2 : out std_logic
-);
-end component HA;
-
-signal internal_signal0, internal_signal1, internal_signal2: std_logic;
+    component or port (
+        a, b   : in std_logic;
+        output : out std_logic
+        );
+    end component;
+    signal sum1, cout1, cout2 : std_logic;
 begin
+    ha1 : HA port map(A, B, sum1, cout1);
+    ha2 : HA port map(Cin, sum1, Sum, cout2);
+    or1 : Or port map(cout1, cout2, Cout);
 
-	half_adder_instance0: HA port map ( in1 => i0, in2 => i1, out1 => internal_signal0, out2 => internal_signal1);
-	half_adder_instance1: HA port map ( in1 => internal_signal0, in2 => cin, out1 => s, out2 => internal_signal2);
-	cout <= internal_signal1 or internal_signal2;
-	
-end structure;
+end StructOfFA;

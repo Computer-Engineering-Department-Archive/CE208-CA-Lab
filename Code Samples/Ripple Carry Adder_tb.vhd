@@ -35,7 +35,7 @@ A => A,
 B => B,
 Cin => Cin,
 S => S,
-Cout =>; Cout
+Cout => Cout
 );
 
  -- Stimulus process
