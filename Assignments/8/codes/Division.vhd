@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use IEEE.STD_LOGIC_UNSIGNED.all;
 
-entity divisor is
+entity division is
     port (
         A        : in std_logic_vector(7 downto 0);
         B        : in std_logic_vector(3 downto 0);
@@ -11,9 +11,9 @@ entity divisor is
         R        : out std_logic_vector(3 downto 0);
         OverFlow : out std_logic
     );
-end divisor;
+end division;
 
-architecture Behavioral of divisor is
+architecture Behavioral of division is
 
 begin
 

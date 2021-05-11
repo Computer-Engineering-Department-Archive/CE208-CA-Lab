@@ -1,14 +1,14 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity Divisor_tb is
-end Divisor_tb;
+entity division_tb is
+end division_tb;
 
-architecture behavior of Divisor_tb is
+architecture behavior of division_tb is
 
     -- Component Declaration for the Unit Under Test (UUT)
 
-    component divisor
+    component division
         port (
             A        : in std_logic_vector(7 downto 0);
             B        : in std_logic_vector(3 downto 0);
@@ -30,7 +30,7 @@ architecture behavior of Divisor_tb is
 begin
 
     -- Instantiate the Unit Under Test (UUT)
-    uut : Divisor port map(
+    uut : division port map(
         A        => A,
         B        => B,
         Q        => Q,
@@ -40,11 +40,11 @@ begin
 
     process
     begin
-        
+
         wait for 1000 ns;
         A <= "11100101";
         B <= "1111";
-        
+
         wait for 1000 ns;
         A <= "00001000";
         B <= "0011";
