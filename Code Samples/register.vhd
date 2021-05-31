@@ -1,50 +1,29 @@
----------------------------------------------------
--- n-bit Register
--- concurrent, generic and range
----------------------------------------------------
-	
-library ieee ;
-use ieee.std_logic_1164.all;
-use ieee.std_logic_unsigned.all;
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
 
----------------------------------------------------
-
-entity reg is
-
-generic(n: natural :=2);
-port(	I:	in std_logic_vector(n-1 downto 0);
-	clock:	in std_logic;
-	load:	in std_logic;
-	clear:	in std_logic;
-	Q:	out std_logic_vector(n-1 downto 0)
+ENTITY register32 IS PORT(
+input		: IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+load_enable	: IN STD_LOGIC; -- load/enable.
+clr 		: IN STD_LOGIC; -- async. clear.
+clk 		: IN STD_LOGIC; -- clock.
+output   	: OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- output
+storage		: BUFFER STD_LOGIC_VECTOR(31 DOWNTO 0) --store the data
 );
-end reg;
+END register32;
 
-----------------------------------------------------
+ARCHITECTURE description OF register32 IS
 
-architecture behv of reg is
-
-    signal Q_tmp: std_logic_vector(n-1 downto 0);
-
-begin
-
-    process(I, clock, load, clear)
-    begin
-
-	if clear = '0' then
-            -- use 'range in signal assigment 
-            Q_tmp <= (Q_tmp'range => '0');
-	elsif (clock='1' and clock'event) then
-	    if load = '1' then
-		Q_tmp <= I;
-	    end if;
-	end if;
-
+BEGIN
+	process(clk, clr)
+	begin
+	if clr = '1' then
+		output <= x"00000000";
+	elsif rising_edge(clk) then
+		if load_enable = '1' then
+			storage <= input;
+		else
+			output <= storage;
+		end if;
+        end if;
     end process;
-
-    -- concurrent statement
-    Q <= Q_tmp;
-
-end behv;
-
----------------------------------------------------
+END description;
