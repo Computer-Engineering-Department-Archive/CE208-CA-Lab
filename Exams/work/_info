@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/modeltech64_2020.4/examples
+T_opt
+!s110 1622468106
+VzznoY6=`WS>7^I=FdLAR_2
+04 6 2 work gcd_tb tb 1
+=1-2cfda1246ecd-60b4e60a-70-4484
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+R0
+Egcd_cal
+Z1 w1622468336
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 24
+Z6 dE:/AUT/(04) CEIT-CA/lab/quiz
+Z7 8E:/AUT/(04) CEIT-CA/lab/quiz/gcd.vhd
+Z8 FE:/AUT/(04) CEIT-CA/lab/quiz/gcd.vhd
+l0
+L5 1
+VQ=G`TmJ?FMi5O_:b>GdIB3
+!s100 1S<0FAFLRb8Enf<]f1>5_1
+Z9 OL;C;2020.4;71
+32
+Z10 !s110 1622468338
+!i10b 1
+Z11 !s108 1622468338.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/quiz/gcd.vhd|
+Z13 !s107 E:/AUT/(04) CEIT-CA/lab/quiz/gcd.vhd|
+!i113 0
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Abehv
+R2
+R3
+R4
+R5
+DEx4 work 7 gcd_cal 0 22 Q=G`TmJ?FMi5O_:b>GdIB3
+!i122 24
+l20
+L14 25
+VF7XmK;Q6gh4KjQ<=U0`1F0
+!s100 4YcN7ji>?8`XfHWZXGYdk0
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Egcd_tb
+Z16 w1622467556
+R2
+R3
+R4
+R5
+!i122 25
+R6
+Z17 8E:/AUT/(04) CEIT-CA/lab/quiz/gcd_tb.vhd
+Z18 FE:/AUT/(04) CEIT-CA/lab/quiz/gcd_tb.vhd
+l0
+L5 1
+VjXmB`V`MM?IaD_Un5_MKj2
+!s100 kiCS[UOGUG43Q;2LgHiSH0
+R9
+32
+Z19 !s110 1622468339
+!i10b 1
+R11
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|E:/AUT/(04) CEIT-CA/lab/quiz/gcd_tb.vhd|
+Z21 !s107 E:/AUT/(04) CEIT-CA/lab/quiz/gcd_tb.vhd|
+!i113 0
+R14
+R15
+Atb
+R2
+R3
+R4
+R5
+Z22 DEx4 work 6 gcd_tb 0 22 jXmB`V`MM?IaD_Un5_MKj2
+!i122 25
+l24
+Z23 L8 32
+Z24 VK0AJbPk[<YZ^?G1lM=C3d3
+Z25 !s100 FHk^zTgSRkCggnLNFKmF]2
+R9
+32
+R19
+!i10b 1
+R11
+R20
+R21
+!i113 0
+R14
+R15
