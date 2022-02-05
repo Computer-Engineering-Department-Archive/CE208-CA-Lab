@@ -1,2 +1,2 @@
-# CE207-CA-Lab
-Computer Architecture
+# CE208-CA-Lab
+Computer Architecture Lab
